@@ -2,7 +2,7 @@
 <div>
   <h2>News-Content [{{$route.params.id}}]</h2>
   <ul>
-    <li><a href="/">Home</a></li>
+    <nuxt-link :to="{name:'index'}">Home</nuxt-link>
   </ul>
 </div>
 </template>

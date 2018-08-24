@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <div id="layouts-default">- layouts-default.vue</div>
-    <nuxt/>
-  </div>
+<div>
+  <div id="layouts-default">- layouts-default.vue</div>
+  <nuxt/>
+  <div class="pic1" />
+</div>
 </template>
 
 <style>
@@ -17,7 +18,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
 }
@@ -51,8 +54,17 @@ html {
   background-color: #35495e;
 }
 
-#layouts-default{
+#layouts-default {
   color: green;
   line-height: 30px;
+}
+.pic1 {
+  position: absolute;
+  left: 360px;
+  top: 10px;
+  width: 600px;
+  height: 397px;
+  background: url('~static/pic1.jpg') no-repeat;
+  /* background: url('/pic1.jpg') no-repeat; */
 }
 </style>
