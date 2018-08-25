@@ -11,6 +11,6 @@
 
 <script>
 export default {
-  transition: 'test'
+  transition: 'test' // 指定页面切换的过渡动效
 }
 </script>

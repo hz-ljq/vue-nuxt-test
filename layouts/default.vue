@@ -1,6 +1,6 @@
 <template>
-<div>
-  <div id="layouts-default">- layouts-default.vue</div>
+<div class='default-box'>
+  <div id="layouts-default">--这里是default布局--</div>
   <nuxt/>
   <div class="pic1" />
 </div>
@@ -66,5 +66,11 @@ html {
   height: 397px;
   background: url('~static/pic1.jpg') no-repeat;
   /* background: url('/pic1.jpg') no-repeat; */
+}
+.default-box {
+  position: relative;
+  border: 1px solid blue;
+  width: 1000px;
+  height: 500px;
 }
 </style>

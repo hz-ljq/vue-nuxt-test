@@ -13,6 +13,7 @@
 <script>
 export default {
   props: ['error'],
+  layout: 'blog', // 指定当前页面使用的布局（layouts 根目录下的布局文件）
   mounted() {
     console.log(this.error);
   }

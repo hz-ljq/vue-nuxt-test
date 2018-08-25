@@ -21,7 +21,7 @@ export default {
       title: this.$route.params.title
     }
   },
-  //独立设置head信息
+  // 独立设置head信息
   head() {
     return {
       title: this.title,

@@ -41,7 +41,8 @@ module.exports = {
       if (isDev && isClient) {
         config.module.rules.push({enforce: 'pre', test: /\.(js|vue)$/, loader: 'eslint-loader', exclude: /(node_modules)/})
       }
-    }
+    },
+    vendor: ['axios'] // 配置后，我们可以在任何页面里面引入 axios 而不用担心它会被重复打包。
   },
   css: ['~assets/css/main.css']
 }
