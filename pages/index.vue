@@ -14,6 +14,9 @@
     <li>
       <nuxt-link :to="{name:'asycData'}">asycData</nuxt-link>
     </li>
+    <li>
+      <nuxt-link :to="{name:'page7'}">page7</nuxt-link>
+    </li>
   </ul>
 </div>
 </template>

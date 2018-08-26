@@ -44,5 +44,14 @@ module.exports = {
     },
     vendor: ['axios'] // 配置后，我们可以在任何页面里面引入 axios 而不用担心它会被重复打包。
   },
-  css: ['~assets/css/main.css']
+  css: [ // 全局样式
+    '~assets/css/main.css', 'swiper/dist/css/swiper.css'
+  ],
+  plugins: [
+    {
+      src: '~/plugins/vue-awesome-swiper.js',
+      ssr: false
+    }
+  ]
+  // plugins: ['~/plugins/vue-awesome-swiper']
 }
